@@ -77,8 +77,8 @@ class CustAdapter extends BaseAdapter
         public View getView(int position, View convertView, ViewGroup parent) {
             View v = getLayoutInflater().inflate(R.layout.activity_list_view, null);
 
-            @SuppressLint("WrongViewCast") ImageView i = (ImageView)  v.findViewById(R.id.itemPic);
-            @SuppressLint("WrongViewCast") TextView t = (TextView) v.findViewById(R.id.itemName);
+            ImageView i = (ImageView)  v.findViewById(R.id.itemName);
+            TextView t = (TextView) v.findViewById(R.id.itemPic);
 
             i.setImageResource(image[position]);
             t.setText(item[position]);
